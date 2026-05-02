@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunil — web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <a href="#hero" class="nav-logo">S.</a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeBtn" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a
+          href="#"
+          class="btn btn-primary"
+          id="resumeBtn"
+          style="padding: 0.5rem 1.1rem; font-size: 0.8rem"
+        >
+          <i class="fa-solid fa-download"></i> Resume
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" class="mob-link">About</a>
+      <a href="#skills" class="mob-link">Skills</a>
+      <a href="#projects" class="mob-link">Projects</a>
+      <a href="#contact" class="mob-link">Contact</a>
+    </div>
+
+    <main>
+      <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+          <div class="hero-badge reveal">
+            <span class="dot"></span> Open to Opportunities
+          </div>
+          <h1 class="hero-name reveal">Hi, I'm<br /><span>Sunil</span></h1>
+          <div class="hero-type reveal">
+            <span id="typeTarget"></span><span class="cursor"></span>
+          </div>
+          <p class="hero-desc reveal">
+            A passionate B.Tech student crafting beautiful, performant web
+            experiences. I love turning ideas into reality through clean code
+            and thoughtful design.
+          </p>
+          <div class="hero-cta reveal">
+            <a href="#projects" class="btn btn-primary"
+              ><i class="fa-solid fa-rocket"></i> View Projects</a
+            >
+            <a href="#contact" class="btn btn-outline"
+              ><i class="fa-regular fa-envelope"></i> Get in Touch</a
+            >
+          </div>
+        </div>
+        <div class="hero-scroll">
+          Scroll
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="about-grid">
+          <div class="reveal about-img-wrap">
+            <div class="about-img-box">👨‍💻</div>
+            <div class="about-stats">
+              <div class="stat-card">
+                <div class="stat-num">5+</div>
+                <div class="stat-lbl">Projects Built</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-num">1+</div>
+                <div class="stat-lbl">Years Coding</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-num">5</div>
+                <div class="stat-lbl">Tech Skills</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-num">∞</div>
+                <div class="stat-lbl">Curiosity</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text reveal">
+            <p class="sec-label">About Me</p>
+            <h2 class="sec-title">Crafting Digital Experiences</h2>
+            <p>
+              I'm <span class="highlight">Sunil</span>, a B.Tech student with a
+              genuine love for web development. Whether it's building a
+              pixel-perfect UI or architecting a database schema, I enjoy every
+              layer of the stack.
+            </p>
+            <p>
+              My journey began with a curiosity for
+              <span class="highlight">how websites work</span> — that curiosity
+              quickly grew into a passion. I've since dived deep into HTML, CSS,
+              JavaScript, and both SQL and NoSQL databases.
+            </p>
+            <p>
+              Outside of code, I enjoy exploring UI design trends, participating
+              in hackathons, and contributing to open-source projects. I'm
+              always looking to
+              <span class="highlight">learn something new</span> and push the
+              boundaries of what I can build.
+            </p>
+            <br />
+            <a href="#contact" class="btn btn-primary"
+              ><i class="fa-solid fa-paper-plane"></i> Let's Connect</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="reveal">
+          <p class="sec-label">What I Know</p>
+          <h2 class="sec-title">Skills & Technologies</h2>
+          <p class="sec-sub">
+            A curated set of tools I use to bring ideas to life — from front-end
+            polish to back-end power.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div
+            class="skill-card reveal"
+            style="--skill-color: #e34f26"
+            data-fill="92"
+          >
+            <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+            <div class="skill-name">HTML5</div>
+            <div class="skill-level">Semantic & Accessible</div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div
+            class="skill-card reveal"
+            style="--skill-color: #264de4"
+            data-fill="88"
+          >
+            <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+            <div class="skill-name">CSS3</div>
+            <div class="skill-level">Flexbox / Grid / Animations</div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div
+            class="skill-card reveal"
+            style="--skill-color: #f7df1e"
+            data-fill="80"
+          >
+            <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-level">ES6+ / DOM / Fetch</div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div
+            class="skill-card reveal"
+            style="--skill-color: #47a248"
+            data-fill="72"
+          >
+            <div class="skill-icon"><i class="fa-solid fa-leaf"></i></div>
+            <div class="skill-name">MongoDB</div>
+            <div class="skill-level">NoSQL / Aggregation</div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div
+            class="skill-card reveal"
+            style="--skill-color: #00758f"
+            data-fill="75"
+          >
+            <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+            <div class="skill-name">MySQL</div>
+            <div class="skill-level">Queries / Joins / Schema</div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div
+            class="skill-card reveal"
+            style="--skill-color: #f05032"
+            data-fill="70"
+          >
+            <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+            <div class="skill-name">Git</div>
+            <div class="skill-level">Version Control</div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="reveal">
+          <p class="sec-label">What I've Built</p>
+          <h2 class="sec-title">Projects</h2>
+          <p class="sec-sub">
+            A selection of personal and academic projects that showcase my
+            skills and problem-solving approach.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card reveal">
+            <div
+              class="project-thumb"
+              style="--p-bg: linear-gradient(135deg, #6c63ff22, #43e8d822)"
+            >
+            🤖
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">Frontend: HTML, CSS, vanilla JavaScript (responsive, dark/light mode)</span><span class="tag">CSS</span
+                ><span class="tag">Backend: Node.js + Express</span
+                ><span class="tag">Browser APIs: WebRTC getUserMedia (camera/mic), Web Speech API (voice input)</span>
+              </div>
+              <h3 class="project-title">IntervAI — AI Interviewer Web Application</h3>
+              <p class="project-desc">
+                A full-stack AI interviewer with live camera preview, voice/text
+                answers, timed questions, and AI-based scoring + feedback..
+              </p>
+              <p>Built to solve real interview anxiety by simulating real-world interview environments.</p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/sunilGupta71/intervai"
+                  class="project-link"
+                  ><i class="fa-brands fa-github"></i> Source</a
+                >
+                <a
+                  href="https://intervai-8ovf.onrender.com"
+                  class="project-link"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                  Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div
+              class="project-thumb"
+              style="--p-bg: linear-gradient(135deg, #43e8d822, #264de422)"
+            >
+              🌤️ 
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag"
+                  >HTML5: For the structure of the web page.</span
+                ><span class="tag">CSS3: For styling and layout.</span
+                ><span class="tag">JavaScript (ES6): For DOM manipulation and asynchronous API fetching (fetch).</span
+                ><span class="tag"
+                  >OpenWeatherMap API: To retrieve real-time weather data.</span
+                >
+              </div>
+
+              <h3 class="project-title">🌤️ Weather Information Web Application</h3>
+              <p class="project-desc">
+               A simple, clean, and responsive weather web application that allows users to fetch real-time weather data for any city around the world. Built using HTML, CSS, and Vanilla JavaScript.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/sunilGupta71/Skillifyz-Task---3" class="project-link"
+                  ><i class="fa-brands fa-github"></i> Source</a
+                >
+                <a href=" https://sunilgupta71.github.io/Skillifyz-Task---3/" class="project-link"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                  Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div
+              class="project-thumb"
+              style="--p-bg: linear-gradient(135deg, #00758f22, #43e8d822)"
+            >
+              🏋️
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span
+                ><span class="tag">MySQL</span>
+              </div>
+              <h3 class="project-title">FitTrack — Gym Management</h3>
+              <p class="project-desc">
+                A gym management system with member registration, attendance
+                tracking, and subscription management backed by MySQL.
+              </p>
+              <div class="project-links">
+                <a href="#" class="project-link"
+                  ><i class="fa-brands fa-github"></i> Source</a
+                >
+                <a href="#" class="project-link"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                  Demo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="reveal">
+          <p class="sec-label">Let's Talk</p>
+          <h2 class="sec-title">Get In Touch</h2>
+          <p class="sec-sub">
+            Have a project in mind, or just want to say hi? My inbox is always
+            open.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Let's build something great together.</h3>
+            <p>
+              I'm currently open to internships, freelance gigs, and
+              collaborative projects. Feel free to reach out!
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="ci-icon">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <span>sunilgupta885122@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <div class="ci-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <span>New Delhi, India</span>
+              </div>
+              <div class="contact-item">
+                <div class="ci-icon">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <span>B.Tech (CSE) — 2rd Year</span>
+              </div>
+            </div>
+            <div class="socials">
+              <a
+                href="https://github.com/sunilGupta71"
+                class="social-btn"
+                title="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/sunil-gupta-6340b5314/"
+                class="social-btn"
+                title="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+
+              <!-- <a href="https://www.instagram.com/_sunil._.88/?hl=en" class="social-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a> -->
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Doe" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="john@example.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                placeholder="Let's collaborate!"
+              />
+            </div>
+            <div class="form-group">
+              <label for="msg">Message</label>
+              <textarea
+                id="msg"
+                placeholder="Tell me about your project or idea..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-note">I typically respond within 24 hours. ✌️</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Designed & built with ❤️ by <span>Sunil</span> &nbsp;·&nbsp; © 2025</p>
+    </footer>
+
+    <div class="toast" id="toast">
+      <i class="fa-solid fa-circle-check"></i> Message sent! I'll get back to
+      you soon.
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
